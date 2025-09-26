@@ -1,4 +1,4 @@
-# LG AI Agent Workshop (2Day)
+# Azure AI Agent Workshop (2Day)
 
 이 Git Repository는 **LG AI Agent Workshop (2일 워크숍)**의 실습용 코드와 자료를 담기 위한 Repo입니다.  
 워크숍 참여자는 이 저장소를 복제(clone)한 뒤, 아래 실습 스크립트를 순차적으로 실행하며 학습 과정을 따라가시면 됩니다.
@@ -35,3 +35,25 @@ pip install -r requirements.txt
 
 ## 빠른 시작
 1. 리포지토리 클론
+
+## 폴더 구조
+Azure-AI-Agent-Workshop/
+│
+├─ README.md
+├─ requirements.txt
+├─ .gitignore
+├─ notebooks/
+│    └─ LG_AI_Agent_Workshop.ipynb
+├─ scripts/
+│    └─ example_script.py
+└─ data/
+     └─ sample_data.csv
+
+README.md : 워크숍 안내 및 실행 방법
+requirements.txt : 실습에 필요한 Python 패키지 목록
+.gitignore : Git에서 제외할 파일/폴더 정의
+notebooks/ : Jupyter 실습 노트북 보관 폴더
+scripts/ : 실습용 Python 스크립트
+data/ : 예제 데이터 보관용 폴더
+
+
