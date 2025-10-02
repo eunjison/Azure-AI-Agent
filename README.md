@@ -215,17 +215,6 @@ pip install markitdown playwright aiofiles pillow
 playwright install
 ```
 
----
-
-## 🤝 기여하기
-
-프로젝트 개선을 위한 기여를 환영합니다!
-
-1. **Fork** 이 저장소
-2. **Feature branch** 생성 (`git checkout -b feature/amazing-feature`)
-3. **Commit** 변경사항 (`git commit -m 'Add amazing feature'`)
-4. **Push** to branch (`git push origin feature/amazing-feature`)
-5. **Pull Request** 생성
 
 ---
 
