@@ -21,12 +21,10 @@
 - Git 클라이언트 및 GitHub 계정  
 
 ```bash
-# 예: 가상환경 생성 및 활성화 (Unix/macOS 기준)
+# 예: 가상환경 생성 및 활성화, 필요한 라이브러리 설치 (Unix/macOS 기준)
 python3 -m venv venv
 source venv/bin/activate
-
-# 필요한 패키지 설치
-pip install -r requirements.txt
+uv pip install -r pyproject.toml
 
 ## 실습 예제
 본 리포지토리에는 AI Agent 구축의 핵심 예제 스크립트를 포함합니다.
