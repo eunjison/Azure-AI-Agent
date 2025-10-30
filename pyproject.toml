@@ -28,9 +28,9 @@ dependencies = [
     "openai>=1.0.0",
     
     # AutoGen Framework
-    "autogen-agentchat>=0.2.0",
-    "autogen-core>=0.2.0",
-    "autogen-ext>=0.2.0",
+    "autogen-agentchat>=0.6.4",
+    "autogen-core>=0.6.4",
+    "autogen-ext>=0.6.4",
     
     # Environment and Configuration
     "python-dotenv>=1.0.0",
