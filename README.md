@@ -43,7 +43,7 @@ git clone https://github.com/eunjison/Azure-AI-Agent.git
 cd Azure-AI-Agent
 
 # 2. Python 가상환경 생성 (권장)
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # 3. 의존성 패키지 설치
@@ -68,6 +68,12 @@ SERP_API_KEY=your-serpapi-key  # 웹 검색용 (선택사항)
 
 ## 📚 실습 노트북 가이드
 
+### 🧭 시작 가이드 & UI (Getting started)
+| 노트북 | 제목 | 비고 |
+|--------|------|------|
+| `01_Autogen Studio.md` | AutoGen Studio 안내서 | UI 사용법 및 실행 가이드 (Markdown) |
+| `02_MagenticUI.md` | Magentic UI 가이드 | UI 확장 및 사용법 (Markdown) |
+
 ### 🔰 기초 과정 (Basic)
 | 노트북 | 제목 | 학습 내용 | 난이도 |
 |--------|------|-----------|--------|
@@ -78,6 +84,7 @@ SERP_API_KEY=your-serpapi-key  # 웹 검색용 (선택사항)
 ### 🔧 중급 과정 (Intermediate)
 | 노트북 | 제목 | 학습 내용 | 난이도 |
 |--------|------|-----------|--------|
+| `06_evaluation.ipynb` | 평가 워크플로우 (수정필요) | 모델 평가 및 성능 지표 (초기 버전 - 수정 필요) | ⭐⭐ |
 | `07_multi-agent_basic.ipynb` | 멀티 에이전트 기초 | 여러 에이전트 간 협업 시스템 | ⭐⭐⭐ |
 | `08_teams.ipynb` | 팀 기반 협업 | RoundRobin 방식 에이전트 팀 구성 | ⭐⭐⭐ |
 | `09_selector_group_chat.ipynb` | 선택적 그룹챗 | 지능형 발언자 선택 시스템 | ⭐⭐⭐ |
@@ -86,8 +93,16 @@ SERP_API_KEY=your-serpapi-key  # 웹 검색용 (선택사항)
 ### 🚀 고급 과정 (Advanced)
 | 노트북 | 제목 | 학습 내용 | 난이도 |
 |--------|------|-----------|--------|
-| `11_code_execution.ipynb` | 코드 실행 에이전트 | 동적 코드 생성 및 실행 시스템 | ⭐⭐⭐⭐ |
+| `11_code_execution.ipynb` | 코드 실행 에이전트 (수정필요) | 동적 코드 생성 및 실행 시스템 (초기 버전) | ⭐⭐⭐⭐ |
 | `12_MagenticOne.ipynb` | MagenticOne 통합 | Microsoft의 통합 멀티 에이전트 플랫폼 | ⭐⭐⭐⭐⭐ |
+| `13_MagenticOne.ipynb` | MagenticOne 예제 추가 | 추가 사례 및 통합 예제 |
+| `13_AI_Search_agent.ipynbb` | AI Search Agent (수정필요) | 검색 기반 에이전트 실험 (파일명/형식 확인 필요) |
+
+### ⚠️ 추가/실습용 노트북 (수정/검토 필요)
+| 노트북 | 설명 |
+|-------|------|
+| `14_MCP_airbnb.ipynb` | MCP / Airbnb 사례 실습 (수정 필요) |
+| `15_customer_agent.ipynb` | 고객 서비스 에이전트 실습 (수정 필요) |
 
 ---
 
@@ -127,21 +142,30 @@ result = await m1.run("복잡한 비즈니스 문제 해결")
 
 ```
 Azure-AI-Agent/
-├── 📋 README.md                    # 프로젝트 가이드 (이 파일)
-├── ⚙️ pyproject.toml              # 패키지 의존성 및 설정
-├── 🔐 .env.sample                 # 환경변수 템플릿
-├── 🔐 .env                        # 실제 환경변수 (개인 설정)
-├── 📓 notebooks/                  # Jupyter 실습 노트북
-│   ├── 03_basic_agent.ipynb       # 기본 에이전트 구현
-│   ├── 04_memory_agent.ipynb      # 메모리 관리 에이전트
-│   ├── 05_api_integration.ipynb   # API 통합 (SerpAPI)
-│   ├── 07_multi-agent_basic.ipynb # 멀티 에이전트 기초
-│   ├── 08_teams.ipynb             # 팀 기반 협업
-│   ├── 09_selector_group_chat.ipynb # 선택적 그룹챗
-│   ├── 10_research.ipynb          # 웹 검색 연구 에이전트
-│   ├── 11_code_execution.ipynb    # 코드 실행 에이전트
-│   └── 12_MagenticOne.ipynb       # MagenticOne 통합
-└── 🗂️ .venv/                     # Python 가상환경
+├── 📋 README.md                       # 프로젝트 가이드 (이 파일)
+├── ⚙️ pyproject.toml                 # 패키지 의존성 및 설정
+├── 🔐 .env.sample                    # 환경변수 템플릿
+├── 🔐 .env                           # 실제 환경변수 (개인 설정) - 커밋 제외
+├── 📓 notebooks/                     # Jupyter 실습 노트북 및 가이드
+│   ├── 01_Autogen Studio.md          # AutoGen Studio 사용법 (Markdown)
+│   ├── 02_MagenticUI.md              # Magentic UI 안내 (Markdown)
+│   ├── 03_basic_agent.ipynb          # 기본 에이전트 구현
+│   ├── 04_memory_agent.ipynb         # 메모리 관리 에이전트
+│   ├── 05_api_integration.ipynb      # API 통합 (SerpAPI)
+│   ├── 06_evaluatio(수정필요).ipynb  # 모델 평가 (검토 필요)
+│   ├── 07_multi-agent_basic.ipynb    # 멀티 에이전트 기초
+│   ├── 08_teams.ipynb                # 팀 기반 협업
+│   ├── 09_selector_group_chat.ipynb  # 선택적 그룹챗
+│   ├── 10_research.ipynb             # 웹 검색 연구 에이전트
+│   ├── 11_code_execution (수정필요).ipynb # 코드 실행 에이전트 (검토 필요)
+│   ├── 12_MagenticOne.ipynb          # MagenticOne 통합
+│   ├── 13_MagenticOne.ipynb          # MagenticOne 추가 예제
+│   ├── 13_AI_Search_agent.(수정필요)ipynbb # AI Search Agent (파일/형식 확인 필요)
+│   ├── 14_MCP_airbnb(수정필요).ipynb # MCP / Airbnb 사례 (검토 필요)
+│   ├── 15_customer_agent(수정필요).ipynb # 고객 서비스 에이전트 (검토 필요)
+│   ├── image.png                      # 문서/노트북에서 사용하는 이미지
+│   └── image-1.png                    # 문서/노트북에서 사용하는 이미지
+└── 🗂️ .venv/                          # Python 가상환경 (권장: 로컬에 생성)
 ```
 
 ---
