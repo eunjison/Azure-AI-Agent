@@ -114,6 +114,10 @@ EXCHANGE_RATE_API_KEY=your-exchange_rate_api_key
 
 ### 📋 학습 경로 추천
 
+**🎯 입문자 (AI 에이전트 기초):**
+1. `01_Autogen_Studio.md` - UI 기반 에이전트 구축 도구
+2. `02_MagenticUI.md` - 고급 멀티 에이전트 UI
+
 **🎯 초급자 (AI 에이전트 입문):**
 1. `03_Basic_Agent.ipynb` - 기본 개념 학습
 2. `04_Teams.ipynb` - 멀티 에이전트 기초
