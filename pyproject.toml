@@ -35,6 +35,7 @@ dependencies = [
     # MagenticOne Dependencies
     "docker>=7.1.0",
     "asyncio-atexit>=1.0.1",
+    "aiohttp>=3.8.0",
     "playwright>=1.47.0",
     "rich>=13.7.0",
 ]
