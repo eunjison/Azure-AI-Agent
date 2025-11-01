@@ -48,6 +48,7 @@ python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # 3. 의존성 패키지 설치
+curl -Ls https://astral.sh/uv/install.sh | bash
 uv pip install -r pyproject.toml
 
 # 4. 환경변수 설정
