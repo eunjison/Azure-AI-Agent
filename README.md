@@ -55,8 +55,6 @@ uv pip install -r pyproject.toml
 cp .env.sample .env
 # .env 파일에 Azure OpenAI 정보 입력
 
-# 5. Jupyter 커널 등록
-python -m ipykernel install --user --name=azure-ai-agent --display-name="Azure AI Agent (Python 3.12)"
 ```
 
 ### 📦 선택적 설치 방법
