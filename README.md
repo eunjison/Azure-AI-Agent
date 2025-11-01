@@ -76,14 +76,14 @@ AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
 AZURE_OPENAI_KEY=your-api-key
 AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4o-mini
 AZURE_OPENAI_API_VERSION=2025-04-01-preview
-SERP_API_KEY=your-serpapi-key  # 웹 검색용 (선택사항)
+SERP_API_KEY=your-serpapi-key  
+OPENWEATHER_API_KEY=your-openwhether_api_key
+GOOGLE_API_KEY=your-google-api-key
+EXCHANGE_RATE_API_KEY=your-exchange_rate_api_key
 ```
 
 **추가 설정 (선택사항):**
-- `GOOGLE_API_KEY`: Google Search API
-- `EXCHANGE_RATE_API_KEY`: 환율 데이터 API
 - `ALPHA_VANTAGE_API_KEY`: 금융 데이터 API
-
 ---
 
 ## 📚 실습 노트북 가이드
