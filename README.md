@@ -89,28 +89,28 @@ SERP_API_KEY=your-serpapi-key  # 웹 검색용 (선택사항)
 ## 📚 실습 노트북 가이드
 
 ### 🧭 시작 가이드 & UI 도구
-| 파일 | 제목 | 설명 |
-|------|------|------|
-| `01_Autogen_Studio.md` | AutoGen Studio 가이드 | UI 기반 에이전트 구축 도구 |
-| `02_MagenticUI.md` | MagenticUI 가이드 | 고급 멀티 에이전트 UI |
+| 파일 | 제목 | 설명 | 난이도 |
+|------|------|------|------|
+| `01_Autogen_Studio.md` | AutoGen Studio 가이드 | UI 기반 에이전트 구축 도구 || ⭐ |
+| `02_MagenticUI.md` | MagenticUI 가이드 | 고급 멀티 에이전트 UI || ⭐ |
 
 ### 🔰 기초 과정 (Basic Agents)
 | 노트북 | 제목 | 학습 내용 | 난이도 |
 |--------|------|-----------|------|
-| `03_Basic_Agent.ipynb` | 기본 에이전트 | 단일 에이전트 구현 및 기본 대화 | ⭐ |
-| `04_Teams.ipynb` | 팀 기반 에이전트 | RoundRobin 방식 멀티 에이전트 | ⭐⭐ |
-| `05_Selector_group_chat.ipynb` | 선택적 그룹챗 | 지능형 발언자 선택 시스템 | ⭐⭐ |
+| `03_Basic_Agent.ipynb` | 기본 에이전트 | 단일 에이전트 구현 및 기본 대화 | ⭐⭐ |
+| `04_Teams.ipynb` | 팀 기반 에이전트 | RoundRobin 방식 멀티 에이전트 | ⭐⭐⭐ |
+| `05_Selector_group_chat.ipynb` | 선택적 그룹챗 | 지능형 발언자 선택 시스템 | ⭐⭐⭐ |
 
 ### 🔧 중급 과정 (Advanced Features)
 | 노트북 | 제목 | 학습 내용 | 난이도 |
 |--------|------|-----------|------|
-| `06_Research.ipynb` | 연구 에이전트 | 웹 검색 기반 정보 수집 및 분석 | ⭐⭐⭐ |
-| `07_code_execution.ipynb` | 코드 실행 에이전트 | AI 코드 생성 및 실행, 주식 분석 | ⭐⭐⭐ |
+| `06_Research.ipynb` | 연구 에이전트 | 웹 검색 기반 정보 수집 및 분석 | ⭐⭐⭐⭐ |
+| `07_code_execution.ipynb` | 코드 실행 에이전트 | AI 코드 생성 및 실행, 주식 분석 | ⭐⭐⭐⭐ |
 
 ### 🚀 고급 과정 (Enterprise Systems)  
 | 노트북 | 제목 | 학습 내용 | 난이도 |
 |--------|------|-----------|------|
-| `08_MagenticOne.ipynb` | MagenticOne 시스템 | Microsoft 통합 멀티 에이전트 플랫폼 | ⭐⭐⭐⭐ |
+| `08_MagenticOne.ipynb` | MagenticOne 시스템 | Microsoft 통합 멀티 에이전트 플랫폼 | ⭐⭐⭐⭐⭐ |
 
 ### 📋 학습 경로 추천
 
