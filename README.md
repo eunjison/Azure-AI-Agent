@@ -38,10 +38,8 @@ API 통합               코드 실행 에이전트         고객 서비스 자
 
 ### 2️⃣ 설치 및 설정
 
-# [Codespace] 이용
-
 ```bash
-# [Local에서 수행 시] 1. 저장소 클론
+# [Local에서 수행 시] 1. 저장소 클론 (코드스페이스 사용 시 스킵)
 git clone https://github.com/eunjison/Azure-AI-Agent.git
 cd Azure-AI-Agent
 
