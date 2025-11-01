@@ -91,8 +91,8 @@ EXCHANGE_RATE_API_KEY=your-exchange_rate_api_key
 ### 🧭 시작 가이드 & UI 도구
 | 파일 | 제목 | 설명 | 난이도 |
 |------|------|------|------|
-| `01_Autogen_Studio.md` | AutoGen Studio 가이드 | UI 기반 에이전트 구축 도구 || ⭐ |
-| `02_MagenticUI.md` | MagenticUI 가이드 | 고급 멀티 에이전트 UI || ⭐ |
+| `01_Autogen_Studio.md` | AutoGen Studio 가이드 | UI 기반 에이전트 구축 도구 | ⭐ |
+| `02_MagenticUI.md` | MagenticUI 가이드 | 고급 멀티 에이전트 UI | ⭐ |
 
 ### 🔰 기초 과정 (Basic Agents)
 | 노트북 | 제목 | 학습 내용 | 난이도 |
