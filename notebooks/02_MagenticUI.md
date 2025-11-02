@@ -16,6 +16,9 @@ AutoGen 위에서 돌아가고, 실행 전에 Plan을 보여주고, 민감한 �
 # AutoGen Studio 설치
 pip install magentic-ui --upgrade
 
+# playwright 설치
+playwright install-deps
+
 # 도커 없이 UI 실행하기
 magentic-ui --run-without-docker --port 8081
 ```
