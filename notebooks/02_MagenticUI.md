@@ -24,7 +24,8 @@ magentic-ui --run-without-docker --port 8081
 ```
 ➡️ 브라우저에서 http://localhost:8081
  열기
-📸 Azure Open AI 사용 시에 Advanced Setting 값 수정
+
+➡️ Azure Open AI 사용 시에 Advanced Setting 값 수정
 ```bash
 model_client_configs:
   orchestrator: &ref_0
