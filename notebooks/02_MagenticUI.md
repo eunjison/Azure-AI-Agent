@@ -24,9 +24,33 @@ magentic-ui --run-without-docker --port 8081
 ```
 ➡️ 브라우저에서 http://localhost:8081
  열기
-📸 캡처 M-1: 첫 화면(세션 목록 + 우측 채팅 패널이 보이게) 
-![alt text](image.png)
-GitHub
+📸 Azure Open AI 사용 시에 Advanced Setting 값 수정
+```bash
+model_client_configs:
+  orchestrator: &ref_0
+    provider: AzureOpenAIChatCompletionClient
+    config:
+      model: gpt-4o
+      api_key: <your-azure-api-key>
+      azure_endpoint: https://<your-resource-name>.openai.azure.com/
+      azure_deployment: <your-deployment-name>
+      api_version: 2024-06-01
+      max_retries: 5
+ 
+  web_surfer: *ref_0
+  coder: *ref_0
+  file_surfer: *ref_0
+ 
+  action_guard:
+    provider: AzureOpenAIChatCompletionClient
+    config:
+      model: gpt-4o
+      api_key: <your-azure-api-key>
+      azure_endpoint: https://<your-resource-name>.openai.azure.com/
+      azure_deployment: <your-deployment-name>
+      api_version: 2024-06-01
+      max_retries: 5
+```  
 ---
 
 # 🧲 Magentic UI를 사용한 에이전트 구현 예제
